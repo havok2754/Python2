@@ -9,6 +9,6 @@
 n + nn + nnn = 369
 """
 
-n = int(input("Введите целое положительное число: "))
-summ = n * 100 + 2 * n * 10 + 3 * n
-print(f"Сумма чисел n + nn + nnn = {summ}")
+n = int(input('Введите целое положительное число: '))
+summ = str(n) + str(n*2) + str(n*3)
+print(f'n + nn + nnn = {summ}')
