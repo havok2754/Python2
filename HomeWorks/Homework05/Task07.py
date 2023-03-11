@@ -12,17 +12,21 @@
 """
 
 n = int(input("ВВедите число: "))
-a = 1
-b = 0
 
-def proof(n, a, b):
-    if a <= n:
-        b += a
-        a += 1
-        proof(n, a, b)
-    else:
-        if b == (n * (n + 1) / 2):
-            print("Выражение верно!")
-        else:
-            print("Выражение неверно!")
-proof(n, a, b)
+
+def proof(n):
+    a = 0
+    b = 0
+    if n > a:
+        b = b + n
+        n -= 1
+        print(a, b, n)
+        proof(n)
+    return b
+
+proof(n)
+print(b, n)
+if b == (n * (n + 1) / 2):
+    print("Выражение верно!")
+else:
+    print("Выражение неверно!")
